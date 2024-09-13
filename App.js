@@ -1,15 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { ImageComponent, StyleSheet, Text, View } from 'react-native';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from './components/home';
-import Screen1 from './components/screen1';
-import Screen2 from './components/screen2';
-import Screen3 from './components/screen3';
-import ImageScreen from './components/ImageScreen';
-import OptionsScreen from './components/OptionsScreen';
-import QuizScreen from './components/QuizScreen';
+import Home from './Screens/Home';
+import Screen1 from './Screens/Screen1';
+import Screen2 from './Screens/Screen2';
+import Screen3 from './Screens/Screen3';
+import ImageScreen from './Screens/ImageScreen';
+import OptionsScreen from './Screens/OptionsScreen';
+import QuizScreen from './Screens/QuizScreen';
 
 const Stack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator()
