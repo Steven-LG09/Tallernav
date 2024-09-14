@@ -7,6 +7,7 @@ export default function Home ({navigation}){
     return(
         <View style={styles.container}>
             <Button title="Pantalla 1" onPress={()=>navigation.navigate("Screen1")}/>
+            <Text> </Text>
             <Text>Hay tres parametros permitidos: Persona, Pereira y Mujer</Text>
             <TextInput placeholder="Escriba un parametro"
             value={texto}
@@ -20,7 +21,9 @@ export default function Home ({navigation}){
             ) : (
                 <Text>Escriba bien el parametro</Text>
             )}
+            <Text> </Text>
             <Button title="HomeTabs" onPress={()=> navigation.navigate("HomeTabs")}/>
+            <Text> </Text>
             <Button title="Ejercicio adicional" onPress={()=> navigation.navigate("Stack1")}/>
         </View>
     );

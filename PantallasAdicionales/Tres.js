@@ -1,9 +1,16 @@
-import { View,Button,StyleSheet } from "react-native";
+import { View,Button,StyleSheet,Text } from "react-native";
+import React, {useState} from "react";
 
-export default function Tres({navigation}){
+export default function Tres(){
+  const[texto,setTexto]  =useState('')
+
+  const handlePress = () => {
+    setTexto('Fin');
+  };
     return(
         <View style={styles.container}>
-            <Button title="Pulsar" onPress={()=>navigation.navigate()}/>
+            <Button title="Pulsar" onPress={handlePress}/>
+            {texto ? <Text>{texto}</Text> : null}
         </View>
     );
 }

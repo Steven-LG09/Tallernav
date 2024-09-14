@@ -3,7 +3,7 @@ import { View,Button,StyleSheet } from "react-native";
 export default function Cuatro({navigation}){
     return(
         <View style={styles.container}>
-            <Button title="Pulsar" onPress={()=>navigation.reset({routes: [{name: 'Tabs1'}]})}/>
+            <Button title="Pulsar" onPress={()=>navigation.navigate('#')}/>
         </View>
     );
 }

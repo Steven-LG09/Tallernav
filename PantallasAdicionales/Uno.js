@@ -1,23 +1,16 @@
-import { View,Button,StyleSheet } from "react-native";
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Stack2 from "./Stack2";
+import { View,Button,StyleSheet,Text } from "react-native";
+import React, {useState} from "react";
 
-const Stack = createNativeStackNavigator()
+export default function Uno(){
+  const[texto,setTexto]  =useState('')
 
-function StackNavigator() {
-    return (
-      <Stack.Navigator>
-        <Stack.Screen name="Stack2" component={Stack2} />
-      </Stack.Navigator>
-    );
-  }
-
-export default function Uno({navigation}){
+  const handlePress = () => {
+    setTexto('Sigue intentando');
+  };
     return(
         <View style={styles.container}>
-            <Button title="Pulsar" onPress={()=>navigation.navigate('StackNavigator',{screen: 'Stack2'})}/>
+            <Button title="Pulsar" onPress={handlePress}/>
+            {texto ? <Text>{texto}</Text> : null}
         </View>
     );
 }
