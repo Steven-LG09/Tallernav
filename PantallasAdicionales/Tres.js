@@ -1,14 +1,13 @@
-import { View,Button,Text,StyleSheet } from "react-native";
-import FlatList1 from "../Components/Flatlist";
+import { View,Button,StyleSheet } from "react-native";
 
-export default function OptionsScreen (){
+export default function Tres({navigation}){
     return(
         <View style={styles.container}>
-            <Text>OptionsScreen</Text>
-            <FlatList1/>
+            <Button title="Pulsar" onPress={()=>navigation.navigate()}/>
         </View>
     );
 }
+
 const styles = StyleSheet.create({
     container: {
       flex: 1,

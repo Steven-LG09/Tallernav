@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { View, FlatList,Text,TouchableOpacity , StyleSheet} from "react-native";
 
 export default function FlatList1 (){
-    const [selectedItem, setSelectedItem] = useState(null);  // State to track the selected item
+    const [selectedItem, setSelectedItem] = useState(null);
 
   const data = [
     { id: '1', name: 'Comer' },
@@ -47,12 +47,12 @@ const styles = StyleSheet.create({
     borderColor: '#ddd',
   },
   selectedItem: {
-    backgroundColor: '#cce5ff',  // Highlight selected item
+    backgroundColor: '#cce5ff',  
   },
   itemText: {
     fontSize: 18,
   },
   selectedText: {
-    fontWeight: 'bold',  // Bold text for selected item
+    fontWeight: 'bold',  
   },
 });

@@ -1,6 +1,6 @@
 import { View,Button,Text,ScrollView,StyleSheet,Image} from "react-native";
 
-export default function ImageScreen ({navigation}){
+export default function ImageScreen (){
     const images = [
         { id: 1, uri: 'https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02_m.jpg' },
         { id: 2, uri: 'https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/urus/2023/model_chooser/urus_s_m.jpg' },

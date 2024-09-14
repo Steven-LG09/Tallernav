@@ -21,6 +21,7 @@ export default function Home ({navigation}){
                 <Text>Escriba bien el parametro</Text>
             )}
             <Button title="HomeTabs" onPress={()=> navigation.navigate("HomeTabs")}/>
+            <Button title="Ejercicio adicional" onPress={()=> navigation.navigate("Stack1")}/>
         </View>
     );
 }

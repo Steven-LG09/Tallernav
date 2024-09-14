@@ -1,14 +1,14 @@
-import { View,Button,Text,StyleSheet } from "react-native";
-import FlatList1 from "../Components/Flatlist";
+import { View,Button,Text ,StyleSheet} from "react-native";
 
-export default function OptionsScreen (){
+export default function AditionalScreen ({navigation}){
     return(
         <View style={styles.container}>
-            <Text>OptionsScreen</Text>
-            <FlatList1/>
+            <Text>Navege hasta encontrar la palabra fin</Text>
+            <Button title="Comenzar" onPress={()=>navigation.navigate("Tabs1")}/>
         </View>
     );
 }
+
 const styles = StyleSheet.create({
     container: {
       flex: 1,

@@ -1,4 +1,3 @@
-import { ImageComponent, StyleSheet, Text, View } from 'react-native';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -7,6 +6,7 @@ import Screen1 from './Screens/Screen1';
 import Screen2 from './Screens/Screen2';
 import Screen3 from './Screens/Screen3';
 import HomeTabs from './Screens/HomeTabs';
+import Stack1 from './PantallasAdicionales/Stack1';
 
 const Stack = createNativeStackNavigator()
 
@@ -19,6 +19,7 @@ export default function App() {
         <Stack.Screen name='Screen2' component={Screen2}/>
         <Stack.Screen name='Screen3' component={Screen3}/>
         <Stack.Screen name='HomeTabs' component={HomeTabs} />
+        <Stack.Screen name='Stack1' component={Stack1} />
       </Stack.Navigator>
     </NavigationContainer>
   );
